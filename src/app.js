@@ -26,4 +26,28 @@ window.onload = function() {
     "at my girfriends house",
     "on top of my car and i started driving"
   ];
+
+  let pronownIndex = Math.floor(Math.random() * pronown.length);
+  let subjectIndex = Math.floor(Math.random() * pronown.length);
+  let actionIndex = Math.floor(Math.random() * pronown.length);
+  let possessionIndex = Math.floor(Math.random() * pronown.length);
+  let whereIndex = Math.floor(Math.random() * pronown.length);
+
+  return (
+    pronown[pronownIndex] +
+    " " +
+    subject[subjectIndex] +
+    " " +
+    action[actionIndex] +
+    " " +
+    possession[possessionIndex] +
+    " " +
+    where[whereIndex]
+  );
+
+
+
+
+
+
 };

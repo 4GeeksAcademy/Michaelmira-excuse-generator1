@@ -7,8 +7,12 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  let generateExcuse = () => {
-    let pronown = ["A", "The"];
+  document.querySelector("#btn").addEventListener("click", () => {
+    document.querySelector("#the-excuse").innerHTML = generateExcuse();
+  });
+};
+let generateExcuse = () => {
+  let pronown = ["A", "The"];
   let subject = [
     "some guy",
     "my neighbor ",
@@ -44,10 +48,4 @@ window.onload = function() {
     " " +
     where[whereIndex]
   );
-
-
-
-
-
-
 };

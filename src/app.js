@@ -32,10 +32,10 @@ let generateExcuse = () => {
   ];
 
   let pronownIndex = Math.floor(Math.random() * pronown.length);
-  let subjectIndex = Math.floor(Math.random() * pronown.length);
-  let actionIndex = Math.floor(Math.random() * pronown.length);
-  let possessionIndex = Math.floor(Math.random() * pronown.length);
-  let whereIndex = Math.floor(Math.random() * pronown.length);
+  let subjectIndex = Math.floor(Math.random() * subject.length);
+  let actionIndex = Math.floor(Math.random() * action.length);
+  let possessionIndex = Math.floor(Math.random() * possession.length);
+  let whereIndex = Math.floor(Math.random() * where.length);
 
   return (
     pronown[pronownIndex] +
